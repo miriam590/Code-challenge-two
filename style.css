@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Button styles */
+.add-button, .clear-button, .toggle-theme {
+    cursor: pointer;
+    padding: 5px 10px; /* Reduced padding for smaller buttons */
+    margin: 10px auto;
+    width: 40%; /* Adjusted width for smaller buttons */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-button {
+    background-color: blue; /* Blue color for Add button */
+}
+
+.clear-button {
+    background-color: purple; /* Purple color for Clear button */
+}
+
+.toggle-theme {
+    background-color: #6a5acd; /* A different shade of purple for Toggle button */
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode input::placeholder {
+    color: #aaa;
+}
+
+.dark-mode .add-button {
+    background-color: #1e90ff; /* Lighter blue for dark mode */
+}
+
+.dark-mode .clear-button {
+    background-color: #9370db; /* Lighter purple for dark mode */
+}
+
+.dark-mode .toggle-theme {
+    background-color: #7b68ee; /* Lighter shade of purple for dark mode */
+}
